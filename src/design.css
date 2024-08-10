@@ -1,0 +1,74 @@
+/* estilogeral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    
+} 
+
+body{
+    background-color: black;
+    height: 100vh;/* toma todo espaço da tela */
+}
+
+.interface {
+    max-width: 1280px; /* largura maxima */
+    margin: 0 auto;  /* ficar centralizado na tela */
+}
+
+/* estilo do cabeçalho */
+
+header {
+    padding: 40px 4%; /* distancia o elemento do canto da tela */
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a:hover{ /* passa o mouse em cima e muda a cor desejada */
+    color: #0092b2; /* cor desejada */
+    transform: scale(1.10); /* puxa o elemento pra frente qdo passar o mouse */
+}
+
+header a{
+    color: #7c7979; /* cor da fonte dos 4 títulos */
+    text-decoration: none;
+    display: inline-block;/* se n tiver este comando, o transform n funciona */
+    transition: .2s; /* suavização qdo o elemento vir pra frente */
+}
+
+header nav ul {
+    list-style-type: none; /* tira as bolinhas/pontinhos da lista */
+}
+
+header nav ul li{
+    display: inline-block;/* colocar em bloco lado a lado */
+    padding: 0 40px;  
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0092b2;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+header .btn-contato button:hover{
+    box-shadow: 0 0 8px #0092b2; /* quando o botão vir pra frente, tem o efeito de shadow */
+}
+
+
+
+
+
+
+
+
