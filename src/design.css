@@ -33,7 +33,7 @@ header > .interface{
 
 header a:hover{ /* passa o mouse em cima e muda a cor desejada */
     color: #0092b2; /* cor desejada */
-    transform: scale(1.10); /* puxa o elemento pra frente qdo passar o mouse */
+    transform: scale(1.9); /* puxa o elemento pra frente qdo passar o mouse */
 }
 
 header a{
