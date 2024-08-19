@@ -1,40 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- google fonts --><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- <!-- fim google fonts --> 
-    <title>Meu portifólio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fim google fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- boostrapicons -->
+    
     <link rel="stylesheet" href="src/design.css">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+   
+    <script src="menu.js" defer></script>
+
+    <title>Meu portifólio</title>
 </head>
 
 <body>
     <header>
-        <div class="interface">
+        <div class="interface" id="inicio">
             <div class="logo">
                 <a href="#">
-                    <img src="imagens/E (1)-Photoroom.png" alt="logotipo">
+                    <img src="/imagens/logokid.png" alt="logotipo">
                 </a>
-            </div> <!-- div da logo -->
+            </div> <!-- div da logo  -->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portifolio">Projetos</a></li>
+                    <li><a href="#fale">Email</a></li>
                 </ul>
             </nav><!-- usando a tag nav para futuramente ficar responsivo -->
             <div class="btn-contato">
-                <a href="#">
+                <a href="https://wa.me/5581998080374" target="_blank" >
                     <button>Contato</button>
                 </a>
-            </div>
+            </div><!-- btn-contato -->
+                <div class="btn-abrir-menu" id="btn-menu">
+                    <i class="bi bi-person-lines-fill"></i>
 
+                </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portifolio">Projetos</a></li>
+                        <li><a href="#fale">Email</a></li>
+                        <li><a href="https://wa.me/5581998080374?text=Olá,%20gostaria%20de%20mais%20informações!" rel="noopener noreferrer">Contato</a></li>
+                    </ul>
+            </div><!-- menu mobile -->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface-->
     </header>
-</body>
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-top-site">
+                        <h1>SEJA <span>BEM-VINDO!</span></h1>
+                        <P>Neste site você vai conhecer um pouco sobre mim e também alguns projetos que fiz, usando html, CSS e um pouco de Javascript.</P>
+                       <!--  <div class="btn-contato">
+                            <a href="#">
+                                <button>falta algo aqui</button>
+                            </a>
+                        </div> -->
+                    </div> <!-- txt-topo-site -->
+
+                    <!-- <div class="img-topo-site">
+                        <img src="imagens/pessoa.png" alt="">
+
+                    </div> -->
+
+                </div>
+            </div>
+        </section> <!-- top-do-site -->
+
+        <section class="especialidades" id="especialidades">
+            <div class="interface">
+                <h2 class="titulos">MINHAS <span>HABILIDADES</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="devicon-html5-plain-wordmark"></i>
+                        <i class="devicon-css3-plain-wordmark"></i>
+                        <h3>Progamação</h3>
+                        <p>Estou estudando a área de progamação web. Atualmente adquiri breve conhecimento em html e CSS, e com isso já realizei alguns pequenos projetos como consta neste site.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="devicon-premierepro-plain colored"></i>
+                         <i class="devicon-photoshop-plain colored"></i>
+                         <i class="bi bi-film"></i>
+          
+                        <h3>Edição de vídeo</h3>
+                        <p> Conhecimento em Adobe premiere e photoshop para sistemas windows e FinalCut para sistemas MacOs. Adquiri habilidades técnicas em edição de vídeos e desenvolvi um olhar atento aos detalhes de imagem.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-windows"></i>
+                        <i class="bi bi-gear"></i>
+
+                        <h3>Montagem e Manutenção de Computadores</h3>
+                        <p>Conclui o curso técnico de montagem e manutenção de computadores no ano de 2015. Assim, adquirindo vasto conhecimento e experiência ao longo do tempo com hardware e software, aplicando os mesmos no dia a dia.</p>
+
+                       <!--  <div class="btn-social">
+
+                            <a href="#"><button></button></a>
+                            <a href="#"><button></button></a>
+                            <a href="#"><button></button></a>
+                        </div> -->
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imagens/fotovnova.png" alt="foto no lado esquerdo">
+                    </div>
+
+                    <div class="txt-sobre">
+                        <h2>Muito prazer, eu sou <span>Everton Diego!</span></h2>
+                        <p>Sou um profissional de suporte em TI com sólida e ampla experiência de atendimento ao público e resolução de problemas de hardware e software. Atendimento via web, telefone e presencial. Com uma formação em Sistemas de Informação, pelo Centro Universitário UNINASSAU, tenho habilidades técnicas em sistemas operacionais Windows e macOS. 
+                            Busco me tornar desenvolvedor Web, e por isso, estou atualmente em constante aprendizagem em programação, desenvolvendo alguns projetos nas linguagens: Html, CSS e Javascript.
+                            Estou em transição de carreira, em busca de oportunidades que me permitam aplicar minhas habilidades técnicas e conhecimentos em suporte de TI.</p>
+                            <div class="btn-social">
+                                <a href="https://www.linkedin.com/in/everton-diego-163b49194/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                                <a href="https://www.instagram.com/diegonotreve/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                                <a href="https://github.com/DiegoNotreve"target="_blank"><button><i class="bi bi-github"></i></button></a>
+                                <a href="https://www.youtube.com/@sandiego6187" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="portifolio" id="portifolio">
+              <div class="interface">
+                <h2 class="titulos">MEUS <span>PROJETOS</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(imagens/wallpapercdz.png);">
+                        <div class="overlay">CAVALEIROS DO ZODÍACO</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(imagens/Wallpaperdragon.png);">
+                        <div class="overlay">HOUSE OF DRAGON</div>
+                    </div> 
+                    <div class="img-port" style="background-image: url(imagens/EM\ BREVE.png);">
+                        <div class="overlay">EM BREVE</div>
+                    </div>
+                </div> <!-- flex -->
+              </div>  <!-- interface -->
+        </section> <!-- portifolio -->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulos" id="fale">FALE <span>COMIGO</span></h2>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <!-- placeholder é o nome de referência q fica dentro e  required é pra ser obrigatório q seja digitado -->
+                    <input type="text" name="" id="" placeholder="Seu email:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+                </form>
+            </div>
+        </section><!-- formulario -->
+
+
+    </main>
+        <footer>
+            <div class="interface">
+                <div class="linha">
+                    <div class="flex">
+                        <div class="logo-footer">
+                            <img src="" alt="">
+                        </div><!-- logo-footer -->
+                        <div class="btn-social">
+                            <h3><span>Ferramentas</span> usadas para este site:</h3>
+                            <button><i class="devicon-html5-plain-wordmark"></i></button>
+                            <button><i class="devicon-css3-plain-wordmark"></i></button>
+                            <button><i class="devicon-javascript-plain"></i></button>
+                            <!-- <button><i class="bi bi-youtube"></i></button> -->
+                        </div><!-- btn-social -->
+                </div>
+                </div> <!-- line-footer -->
+                <div class="linha baixo">
+                    <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto:notreevogeid@gmail.com">notreveogeid@gmail.com</a></p>
+                </div>
+            </div><!-- interface -->
+        </footer>
+
+        
+
 </html>
