@@ -161,7 +161,7 @@ header nav.menu-desktop ul li {
     right: 0;
     z-index: 99999;
     width: 0%;
-    overflow: hidden;
+    overflow-y: auto;
     transition: .5s;
 }
 
@@ -170,6 +170,12 @@ header nav.menu-desktop ul li {
 .menu-mobile nav ul{ /* menu do mobile no lado direito */
     text-align: right;
 }
+
+.menu-mobile nav ul {
+    flex-grow: 1; /* Faz com que a lista de navegação ocupe o espaço disponível */
+    overflow-y: auto; /* Adiciona rolagem dentro da lista de navegação se necessário */
+}
+
 
 .menu-mobile nav ul li a{
     color: #fff;
@@ -632,5 +638,20 @@ section.portifolio .flex {
     }
 
     
+}
+
+@media screen and (orientation: landscape) {
+    .menu-mobile {
+        height: 100vh;
+       
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .overlay-menu {
+        width: 100%;
+    }
 }
 
