@@ -12,20 +12,27 @@
 
 
 body {
-    
+
     background-image: url('https://jooinn.com/images/text-background-5.png');
-    background-size: cover; /* Faz com que a imagem cubra toda a área do corpo da página */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa quando você rolar a página */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área do corpo da página */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-attachment: fixed;
+    /* Faz com que a imagem de fundo fique fixa quando você rolar a página */
     height: 100vh;
     /* toma todo espaço da tela */
 }
+
 html {
     scroll-behavior: smooth;
-}/* faz com que qualquer rolagem dentro da página seja suave, tanto ao clicar nos links de âncora como ao usar a barra de rolagem.  */
+}
 
-.topo-do-site h1{
+/* faz com que qualquer rolagem dentro da página seja suave, tanto ao clicar nos links de âncora como ao usar a barra de rolagem.  */
+
+.topo-do-site h1 {
     text-align: center;
 }
 
@@ -38,27 +45,29 @@ h2.titulos {
 
 .flex h3 {
     color: #fff;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     justify-content: center;
     font-size: 30px;
- 
 }
 
-h3 span{
+h3 span {
     color: #0092b2;
 }
 
-p{
+p {
     color: #fff;
+    white-space: normal;
+   
 }
 
 h2.titulos span {
     color: #0092b2;
+    
 }
 
 
 
-.btn-abrir-menu{
+.btn-abrir-menu {
     display: none;
 }
 
@@ -66,13 +75,14 @@ h2.titulos span {
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0 0 10px 8px #0092b2, 
-    inset 0px 0px 10px 2px #0092b2;
+    box-shadow: 0 0 10px 8px #0092b2,
+        inset 0px 0px 10px 2px #0092b2;
     /* quando o botão vir pra frente, tem o efeito de shadow */
     transform: scale(1.05);
 }
 
-.btn-contato button { /* botão com efeito de neon */
+.btn-contato button {
+    /* botão com efeito de neon */
     background-color: transparent;
     padding: 10px 30px;
     font-size: 18px;
@@ -145,15 +155,15 @@ header nav.menu-desktop ul li {
     padding: 0 40px;
 }
 
-    /* MENU MOBILE */
+/* MENU MOBILE */
 
-    .btn-abrir-menu i{
-        color: #0092b2;
-        font-size: 40px;
-    }
+.btn-abrir-menu i {
+    color: #0092b2;
+    font-size: 40px;
+}
 
 
-.menu-mobile{
+.menu-mobile {
     background-color: #000000;
     height: 100vh;
     position: fixed;
@@ -167,17 +177,20 @@ header nav.menu-desktop ul li {
 
 
 
-.menu-mobile nav ul{ /* menu do mobile no lado direito */
+.menu-mobile nav ul {
+    /* menu do mobile no lado direito */
     text-align: right;
 }
 
 .menu-mobile nav ul {
-    flex-grow: 1; /* Faz com que a lista de navegação ocupe o espaço disponível */
-    overflow-y: auto; /* Adiciona rolagem dentro da lista de navegação se necessário */
+    flex-grow: 1;
+    /* Faz com que a lista de navegação ocupe o espaço disponível */
+    overflow-y: auto;
+    /* Adiciona rolagem dentro da lista de navegação se necessário */
 }
 
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
@@ -185,12 +198,13 @@ header nav.menu-desktop ul li {
     display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: #0092b2;
     color: #000;
 }
 
-.overlay-menu{ /* este é o efeito do overlay(sombra atrás do menu) */
+.overlay-menu {
+    /* este é o efeito do overlay(sombra atrás do menu) */
     background-color: #000000be;
     width: 100%;
     height: 100%;
@@ -198,24 +212,24 @@ header nav.menu-desktop ul li {
     top: 0;
     left: 0;
     z-index: 88888;
-    display: none;  
+    display: none;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
-.menu-mobile .btn-fechar i{
-color: #0092b2;
-font-size: 30px;
+.menu-mobile .btn-fechar i {
+    color: #0092b2;
+    font-size: 30px;
 
 }
 
@@ -251,7 +265,8 @@ section.topo-do-site .flex {
     line-height: 40px;
 
 }
-.topo-do-site span{
+
+.topo-do-site span {
     color: #0092b2;
 }
 
@@ -259,10 +274,12 @@ section.topo-do-site .flex {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
-.topo-do-site p{
+
+.topo-do-site p {
     margin-top: 20px;
 }
-.topo-do-site .btn-contato button{
+
+.topo-do-site .btn-contato button {
     margin-top: 20px;
 }
 
@@ -280,6 +297,31 @@ section.topo-do-site .flex {
 
 /* essa key frame só funciona se tiver um position */
 
+@keyframes blob-bounce {
+    0% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+  
+    50% {
+      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+  
+    75% {
+      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+  }
+
+
+
+
 /* estilo das especialidades */
 
 section.especialidades {
@@ -289,6 +331,8 @@ section.especialidades {
 section.especialidades .flex {
     gap: 60px;
 }
+
+
 
 .especialidades .especialidades-box {
     color: #fff;
@@ -307,6 +351,7 @@ section.especialidades .flex {
 .especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
+    
 }
 
 .especialidades .especialidades-box:hover {
@@ -317,6 +362,7 @@ section.especialidades .flex {
 /* estilo do sobre */
 section.sobre {
     padding: 40px 4%;
+    width: 100%;
 }
 
 section.sobre .flex {
@@ -340,7 +386,10 @@ section.sobre .flex {
 .sobre .txt-sobre p {
     margin: 20px 0px;
     text-align: justify;
+    white-space: normal;
 }
+
+
 
 .btn-social button {
     width: 60px;
@@ -354,30 +403,68 @@ section.sobre .flex {
     transition: 0.2s;
 }
 
-.sobre img{
+.sobre img {
     border-radius: 30px;
     border: 2px solid #0092b2;
     box-shadow: 0 0 10px 8px #0092b2,
-    inset 0px 0px 10px 2px #0092b2;
+        inset 0px 0px 10px 2px #0092b2;
 }
 
 
-.sobre .btn-social i{
-color: #0092b2;
+.sobre .btn-social i {
+    color: #0092b2;
 
 }
 
 
 /* SESSAO DE PROJETOS */
 section.portifolio {
-    padding: 80px 4%;
+    padding: 100px 4%;
     box-shadow: 0 0 40px 10px #ffffff8f;
+    position: relative;
 }
+
+
+
+.link-texto{ /* botão de saiba mais */
+    position: absolute;
+    top: 100%; /* Define a distância do link em relação à parte inferior do contêiner */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o link horizontalmente */
+    color: #0092b2;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+
 
 section.portifolio .flex {
     justify-content: space-around;
     margin-top: 60px;
 }
+
+section.portifolio button {
+    padding: 10px 20px;
+    color: #0092b2;
+    font-size: 18px;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid #0092b2;
+    cursor: pointer; 
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.portifolio a {
+    text-decoration: none;
+}
+ 
 
 .img-port {
     width: 360px;
@@ -389,6 +476,22 @@ section.portifolio .flex {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+}
+
+
+
+.giro{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 183px;
+    height: 233px;
+    border-radius: 18%;
+    background-color: #0092b2;
+    filter: blur(3px);
+    opacity: 1;
+    animation: blob-bounce 5s infinite ease;
 }
 
 .img-port:hover {
@@ -416,6 +519,8 @@ section.portifolio .flex {
 .overlay:hover {
     opacity: 1;
 }
+
+
 
 /* formulario */
 section.formulario {
@@ -499,19 +604,31 @@ footer .linha {
 footer .linha p i {
     color: #0092b2;
     font-size: 30px;
+    display: block; /* Coloca o ícone em bloco */
+    text-align: center;
+    margin: 0 auto;
+
 }
 
 footer .linha p a {
     color: #0092b2;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    
+    
 }
 
-footer .btn-social i{
+
+footer .btn-social i {
     color: #0092b2;
+    align-items: center;
 }
 
 
-footer .btn-social{
-text-align: center;
+footer .btn-social {
+    text-align: center;
 }
 
 
@@ -533,12 +650,14 @@ text-align: center;
     }
 
     h2.titulos {
-    
-    font-size: 34px;
-    line-height: 30px;
-    margin-bottom: 40px;
 
-}
+        font-size: 34px;
+        line-height: 30px;
+        margin-bottom: 40px;
+
+    }
+
+
 
 
     /* cabeçalho */
@@ -547,17 +666,17 @@ text-align: center;
         display: none;
     }
 
-    .btn-abrir-menu{
+    .btn-abrir-menu {
         display: block;
     }
+
     /* topo do site */
 
     section.topo-do-site .flex {
-
         gap: 40px;
     }
 
-    
+
 
     section.topo-do-site {
         padding: 20px 8%;
@@ -571,28 +690,44 @@ text-align: center;
         width: 100%;
     }
 
-    
-    
-    
+
+
+
     /* ESPECIALIDADES */
-   
+
     section.especialidades {
         padding: 40px 8%;
     }
-    .especialidades .especialidades-box{
+
+    .especialidades .especialidades-box {
         text-align: center;
     }
 
     /* SOBRE */
     .sobre .txt-sobre h2 {
         font-size: 30px;
+        line-height: 36px;
+        text-align: center;
     }
 
     section.sobre {
         padding: 80px 8%;
     }
 
-    .sobre .txt-sobre h2{
+    .sobre .txt-sobre p {
+        text-align: center;
+       
+    }
+
+    .sobre .btn-social{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 20px;
+    }
+
+   
+    .sobre .txt-sobre h2 {
         font-size: 40px;
         line-height: 40px;
         text-align: center;
@@ -603,30 +738,54 @@ text-align: center;
         margin: 0 8px;
     }
 
-    .img-sobre img{
+    .img-sobre img {
         width: 100%;
     }
 
-  
+
     /* PORTIFOLIO  FOOTER*/
- 
-    section .portifolio{
-    padding: 80px 8%;
-   } 
 
+    section .portifolio {
+        padding: 80px 8%;
+    }
+    
+    section.portifolio button {
+        margin-top: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+    }
 
- 
-   .img-port {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
+    h2.titulos span{
+        display: block;
+        margin-top: 20px;
+    }
+
    
-}
- 
-section.portifolio .flex {
-    gap: 60px;
-}
-   
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+
+    }
+    .img-port{
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    section.portifolio .flex {
+        gap: 60px;
+    }
+
+    .portifolio{
+        position: relative;
+    }
+
+    .link-texto {
+    margin-top: 0px ;
+    }
 
     footer .flex {
         flex-direction: column;
@@ -634,16 +793,16 @@ section.portifolio .flex {
     }
 
     footer .linha {
-    text-align: center;
+        text-align: center;
     }
 
-    
+
 }
 
 @media screen and (orientation: landscape) {
     .menu-mobile {
         height: 100vh;
-       
+
     }
 
     .menu-mobile.abrir-menu {
@@ -654,4 +813,3 @@ section.portifolio .flex {
         width: 100%;
     }
 }
-
