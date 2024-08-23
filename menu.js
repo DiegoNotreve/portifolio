@@ -14,12 +14,3 @@ overlay.addEventListener('click', ()=>{
     menu.classList.add('abrir-menu')
 })
 
-/* document.addEventListener('DOMContentLoaded', function() {
-    const linkSobre = document.getElementById('link-sobre');
-    const sectionSobre = document.getElementById('sobre');
-
-    linkSobre.addEventListener('click', function() {
-        sectionSobre.scrollIntoView({ behavior: 'smooth' });
-    });
-});
- */
