@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
     <!-- google fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -13,11 +15,14 @@
     <!-- fim google fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- boostrapicons -->
-
     <link rel="stylesheet" href="src/design.css">
+    
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="revel.js" defer></script>
+    
     <script src="menu.js" defer></script>
 
     <title>Meu portifólio</title>
@@ -71,7 +76,7 @@
         <section class="topo-do-site">
             <div class="interface">
                 <div class="flex">
-                    <div class="txt-top-site">
+                    <div class="txt-top-site efeito-topo">
                         <h1>SEJA <span>BEM-VINDO!</span></h1>
                         <P>Neste site você vai conhecer um pouco sobre mim e também alguns projetos que fiz, usando
                             html, CSS e um pouco de Javascript.</P>
@@ -93,9 +98,9 @@
 
         <section class="especialidades" id="especialidades">
             <div class="interface">
-                <h2 class="titulos">MINHAS <span>HABILIDADES</span></h2>
+                <h2 class="titulos efeito-habilidades">MINHAS <span>HABILIDADES</span></h2>
                 <div class="flex">
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades1">
                         <i class="devicon-html5-plain-wordmark"></i>
                         <i class="devicon-css3-plain-wordmark"></i>
                         <h3> Experiências com Desenvolvimento Web</h3>
@@ -103,7 +108,7 @@
                             CSS, e com isso já realizei alguns pequenos projetos como consta neste site.</p>
                     </div>
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades2">
                         <i class="devicon-premierepro-plain colored"></i>
                         <i class="devicon-photoshop-plain colored"></i>
                         <i class="bi bi-film"></i>
@@ -114,7 +119,7 @@
                             detalhes de imagem.</p>
                     </div>
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades3">
                         <i class="bi bi-windows"></i>
                         <i class="bi bi-gear"></i>
 
@@ -170,9 +175,9 @@
 
         <section class="portifolio" id="portifolio">
             <div class="interface">
-                <h2 class="titulos"> ACESSE MEU <a href="https://github.com/DiegoNotreve"><button>GITHUB</button></a>
+                <h2 class="titulos efeito-titulos"> ACESSE MEU <a href="https://github.com/DiegoNotreve"><button>GITHUB</button></a>
                     E CONHEÇA MEUS <span>PROJETOS.</span></h2>
-                <div class="flex">
+                <div class="flex efeito-flex">
                     <div class="img-port" style="background-image: url(/src/imagens/elden.png);">
                         <div class="overlay">ELDEN RING
                         </div>
@@ -198,6 +203,10 @@
             <!-- interface -->
 
         </section> <!-- portifolio -->
+
+
+        <!-- Nova Seção para o Slider -->
+
 
         <section class="formulario">
             <div class="interface">
